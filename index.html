@@ -3,332 +3,284 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO & Identity -->
-  <title>Classic Business Centre Goa | Premium Print & Design Studio</title>
-  <meta name="description" content="Goa's premier print centre. Classic Business Centre offers high-quality digital printing, Xerox, graphic design, business cards, flex & vinyl, offset, and binding across branches in Goa.">
+  <title>Classic Business Centre Goa | Digital Printing, Xerox, Binding & Design</title>
+  <meta name="description" content="Classic Business Centre Goa offers digital printing, xerox, graphic designing, business cards, flex & vinyl, binding, lamination, scanning and offset printing across Goa.">
   <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="canonical" href="https://cbcgoa.com/">
-  
-  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
+  <!-- LocalBusiness Schema for Goa Branches -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Classic Business Centre Goa",
+    "image": "https://cbcgoa.com/logo.png",
+    "@id": "https://cbcgoa.com",
+    "url": "https://cbcgoa.com",
+    "telephone": "+919422062887",
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "EDC Patto Plaza",
+      "addressLocality": "Panaji",
+      "addressRegion": "Goa",
+      "postalCode": "403001",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "20:00"
+    }
+  }
+  </script>
 </head>
 <body>
-  
-  <!-- Navigation -->
+  <div class="scroll-paper" aria-hidden="true"><span></span></div>
   <header class="site-header" id="top">
-    <div class="header-container">
-      <a class="brand" href="#top" aria-label="Classic Business Centre home">
-        <img src="logo.png" alt="CBC Logo" width="48" height="48">
-        <span class="brand-text">Classic Business Centre</span>
-      </a>
-      
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#services">Services</a>
-        <a href="#catalogue">Rates</a>
-        <a href="#workshop">Shop</a>
-        <a href="#branches">Branches</a>
-      </nav>
-      
-      <div class="header-actions">
-        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
-        </button>
-        <a class="btn btn-primary" href="#request">Print Now</a>
-        <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-      </div>
+    <a class="brand" href="#top" aria-label="Classic Business Centre home"><img src="logo.png" alt="Classic Business Centre logo"><span>Classic Business Centre</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#catalogue">Guide</a>
+      <a href="#workshop">Shop</a>
+      <a href="#branches">Branches</a>
+      <a href="#faq">FAQ</a>
+      <a href="#request">Request</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+      <a class="cta cta-small" href="#request">PRINT NOW</a>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content reveal">
-          <div class="badge">Premium print centre in Goa</div>
-          <h1>Precision printing, delivered without delay.</h1>
-          <p class="hero-subtitle">From premium business cards to large-format flex banners, CBC brings 30 years of design, print, and finishing expertise under one roof across Goa.</p>
-          
-          <div class="hero-cta-group">
-            <a class="btn btn-primary btn-large" href="#request">Start a Print Job</a>
-            <a class="btn btn-outline btn-large" href="tel:+919422062887">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              +91 94220 62887
-            </a>
+    <section class="hero printer-hero">
+      <div class="hero-machine" aria-hidden="true">
+        <div class="machine-top"></div>
+        <div class="machine-slot"></div>
+        <div class="paper-sheet">
+          <img src="logo.png" alt="">
+          <strong>Serving Goa since 30 years</strong>
+          <span>Digital printing • Xerox • Design • Flex • Binding</span>
+        </div>
+      </div>
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Premium print centre in Goa</span>
+          <h1>Prints that look sharp before they reach your hand.</h1>
+          <p>From business cards and college submissions to flex banners, stickers, menus, scans, lamination and bulk offset work — CBC brings design, print and finishing under one roof.</p>
+          <div class="hero-actions">
+            <a class="cta cta-main" href="#request">PRINT NOW</a>
+            <a class="ghost" href="tel:+919422062887">Call +91 94220 62887</a>
           </div>
-
-          <div class="trust-metrics">
-            <div class="metric"><strong>30+</strong> <span>Years</span></div>
-            <div class="metric"><strong>Verified</strong> <span>Branches</span></div>
-            <div class="metric"><strong>A0</strong> <span>Printing</span></div>
-            <div class="metric"><strong>100%</strong> <span>Quality</span></div>
+          <div class="trust-row">
+            <span><b>30+</b> Years</span>
+            <span><b>4</b> Branches</span>
+            <span><b>A0</b> Printing</span>
+            <span><b>Front & Back</b> Options</span>
           </div>
         </div>
-
-        <div class="hero-visual reveal reveal-delay-1">
-          <div class="image-wrapper">
-            <img src="shop-hero.webp" alt="Classic Business Centre print production floor" width="600" height="600" priority>
-            <div class="floating-badge">
-              <span class="badge-label">Popular Today</span>
-              <strong>Business cards, menus & stickers</strong>
-            </div>
+        <div class="hero-visual reveal">
+          <img src="shop-hero.webp" alt="Classic Business Centre print production floor">
+          <div class="hero-card floating-card">
+            <span>Today’s popular jobs</span>
+            <strong>Business cards, menus, stickers, certificates & binding</strong>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- How It Works Strip -->
-    <section class="process-strip" aria-label="How it works">
-      <div class="container process-grid">
-        <div class="process-step">
-          <div class="step-number">01</div>
-          <div class="step-text">
-            <strong>Send details on WhatsApp</strong>
-            <p>Select your service, paper, size, and quantity.</p>
-          </div>
-        </div>
-        <div class="process-step">
-          <div class="step-number">02</div>
-          <div class="step-text">
-            <strong>Approve print specs</strong>
-            <p>Review files and confirm print sides (Front/Back).</p>
-          </div>
-        </div>
-        <div class="process-step">
-          <div class="step-number">03</div>
-          <div class="step-text">
-            <strong>Collect from branch</strong>
-            <p>Pick up from Panaji or North Goa branches.</p>
-          </div>
-        </div>
+    <section class="section quick-strip">
+      <div class="container strip-grid">
+        <div><span>01</span><strong>Send details on WhatsApp</strong><small>Service, paper, size, quantity and branch.</small></div>
+        <div><span>02</span><strong>Approve print specs</strong><small>Choose front-only or front & back options.</small></div>
+        <div><span>03</span><strong>Collect from branch</strong><small>Panaji, Porvorim, or Mapusa.</small></div>
       </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="section bg-light" id="services">
-      <div class="container section-header text-center reveal">
-        <h2 class="section-title">Everything CBC prints, under one roof.</h2>
-        <p class="section-description">Choose a category or search directly for the print service you need. We handle everything from everyday copies to premium commercial runs.</p>
+    <section class="section services" id="services">
+      <div class="container section-head reveal">
+        <span class="eyebrow">Services</span>
+        <h2>Everything CBC prints, finished and sorted by need.</h2>
+        <p>Choose a category or search directly for the print service you need.</p>
       </div>
-
-      <div class="container service-controls reveal reveal-delay-1">
-        <div class="filter-group" role="group" aria-label="Filter services">
-          <button class="filter-btn active" data-filter="all">All Services</button>
-          <button class="filter-btn" data-filter="everyday">Print & Copy</button>
-          <button class="filter-btn" data-filter="design">Cards & Design</button>
-          <button class="filter-btn" data-filter="large">Large Format</button>
-          <button class="filter-btn" data-filter="finish">Finishing</button>
-          <button class="filter-btn" data-filter="bulk">Offset</button>
-          <button class="filter-btn" data-filter="special">Stickers</button>
+      <div class="container service-tools reveal">
+        <div class="filter-buttons" role="group" aria-label="Filter services">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="everyday">Print & Copy</button>
+          <button class="filter" data-filter="design">Cards & Design</button>
+          <button class="filter" data-filter="large">Large Format</button>
+          <button class="filter" data-filter="finish">Finishing</button>
+          <button class="filter" data-filter="bulk">Offset</button>
+          <button class="filter" data-filter="special">Stickers</button>
         </div>
-        <div class="search-wrapper">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="search" id="serviceSearch" class="search-input" placeholder="Search xerox, lamination, flex..." aria-label="Search services">
-        </div>
+        <label class="search-box"><span>Search</span><input id="serviceSearch" type="search" placeholder="Search xerox, business cards, lamination..."></label>
       </div>
-
       <div class="container service-grid" id="serviceGrid">
-        <article class="service-card reveal" data-category="everyday" data-title="digital printing">
-          <div class="card-img-wrap"><img src="service-digital-printing.svg" alt="" loading="lazy"></div>
-          <div class="card-content">
-            <span class="category-tag tag-blue">Everyday</span>
+        <article class="service-card" data-category="everyday" data-title="digital printing">
+          <img src="service-digital-printing.svg" alt="Digital Printing illustration" loading="lazy">
+          <div class="service-body">
+            <span class="service-tag">Everyday</span>
             <h3>Digital Printing</h3>
-            <p>Colour and black & white prints for documents, portfolios, presentations, and office work.</p>
-            <div class="feature-pills"><span>A4 to A0</span><span>Colour / B&W</span></div>
+            <p>Colour and black & white prints for documents, portfolios, presentations, certificates and office work.</p>
+            <div class="chips"><span>A4 to A0</span><span>Colour / B&W</span><span>Same-day jobs</span></div>
           </div>
         </article>
-
-        <article class="service-card reveal" data-category="everyday" data-title="xerox & copying">
-          <div class="card-img-wrap"><img src="service-xerox.svg" alt="" loading="lazy"></div>
-          <div class="card-content">
-            <span class="category-tag tag-blue">Everyday</span>
+        <article class="service-card" data-category="everyday" data-title="xerox & copying">
+          <img src="service-xerox.svg" alt="Xerox & Copying illustration" loading="lazy">
+          <div class="service-body">
+            <span class="service-tag">Everyday</span>
             <h3>Xerox & Copying</h3>
-            <p>Fast photocopying for college notes, legal papers, office files, and bulk document sets.</p>
-            <div class="feature-pills"><span>Bulk Copies</span><span>Fast Turnaround</span></div>
+            <p>Fast photocopying for college notes, legal papers, office files and bulk document sets.</p>
+            <div class="chips"><span>Colour</span><span>B&W</span><span>Bulk copies</span></div>
           </div>
         </article>
-
-        <article class="service-card reveal" data-category="everyday" data-title="scanning">
-          <div class="card-img-wrap"><img src="service-scanning.svg" alt="" loading="lazy"></div>
-          <div class="card-content">
-            <span class="category-tag tag-blue">Everyday</span>
+        <article class="service-card" data-category="everyday" data-title="scanning">
+          <img src="service-scanning.svg" alt="Scanning illustration" loading="lazy">
+          <div class="service-body">
+            <span class="service-tag">Everyday</span>
             <h3>Scanning</h3>
-            <p>High-resolution scanning and digital document preparation for personal and commercial use.</p>
-            <div class="feature-pills"><span>High-Res</span><span>PDF Ready</span></div>
+            <p>High-resolution scanning and digital document preparation for personal, office and commercial use.</p>
+            <div class="chips"><span>High-res</span><span>A4 to A0</span><span>PDF ready</span></div>
           </div>
         </article>
-
-        <article class="service-card reveal" data-category="design" data-title="graphic designing">
-          <div class="card-img-wrap"><img src="service-graphic-designing.svg" alt="" loading="lazy"></div>
-          <div class="card-content">
-            <span class="category-tag tag-purple">Design</span>
+        <article class="service-card" data-category="design" data-title="graphic designing">
+          <img src="service-graphic-designing.svg" alt="Graphic Designing illustration" loading="lazy">
+          <div class="service-body">
+            <span class="service-tag">Design</span>
             <h3>Graphic Designing</h3>
-            <p>Professional layouts for flyers, visiting cards, menus, certificates, and brand material.</p>
-            <div class="feature-pills"><span>Prepress</span><span>Print-Ready</span></div>
+            <p>Professional layouts for flyers, visiting cards, menus, wedding cards, certificates, brochures and brand material.</p>
+            <div class="chips"><span>Layout</span><span>Prepress</span><span>Print-ready</span></div>
           </div>
         </article>
-
-        <article class="service-card reveal" data-category="design" data-title="business cards">
-          <div class="card-img-wrap"><img src="service-business-cards.svg" alt="" loading="lazy"></div>
-          <div class="card-content">
-            <span class="category-tag tag-purple">Design</span>
+        <article class="service-card" data-category="design" data-title="business cards">
+          <img src="service-business-cards.svg" alt="Business Cards illustration" loading="lazy">
+          <div class="service-body">
+            <span class="service-tag">Design</span>
             <h3>Business Cards</h3>
-            <p>Premium card, textured, metallic and specialty stocks. Front-only or front & back.</p>
-            <div class="feature-pills"><span>12×18 Sheets</span><span>Premium Stock</span></div>
+            <p>Front-only and front & back visiting cards on premium card, textured, metallic and specialty stocks.</p>
+            <div class="chips"><span>12 × 18 sheets</span><span>Front & back</span><span>Premium stock</span></div>
           </div>
         </article>
-
-        <article class="service-card reveal" data-category="design" data-title="brochures & menus">
-          <div class="card-img-wrap"><img src="service-brochures-menus.svg" alt="" loading="lazy"></div>
-          <div class="card-content">
-            <span class="category-tag tag-purple">Design</span>
+        <article class="service-card" data-category="design" data-title="brochures & menus">
+          <img src="service-brochures-menus.svg" alt="Brochures & Menus illustration" loading="lazy">
+          <div class="service-body">
+            <span class="service-tag">Design</span>
             <h3>Brochures & Menus</h3>
-            <p>Folded brochures, restaurant menus, pamphlets, flyers, and product catalogues.</p>
-            <div class="feature-pills"><span>Folding</span><span>Custom Crease</span></div>
+            <p>Folded brochures, restaurant menus, pamphlets, flyers and product catalogues with finishing support.</p>
+            <div class="chips"><span>Flyers</span><span>Menus</span><span>Brochures</span></div>
           </div>
         </article>
-
-        <article class="service-card reveal" data-category="large" data-title="jumbo printing">
-          <div class="card-img-wrap"><img src="service-jumbo-printing.svg" alt="" loading="lazy"></div>
-          <div class="card-content">
-            <span class="category-tag tag-orange">Large Format</span>
+        <article class="service-card" data-category="large" data-title="jumbo printing">
+          <img src="service-jumbo-printing.svg" alt="Jumbo Printing illustration" loading="lazy">
+          <div class="service-body">
+            <span class="service-tag">Large</span>
             <h3>Jumbo Printing</h3>
-            <p>Large-size document, poster, plan, and display printing for architects and events.</p>
-            <div class="feature-pills"><span>A0 Size</span><span>Architectural Plans</span></div>
+            <p>Large-size document, poster, plan and display printing for students, architects, offices and events.</p>
+            <div class="chips"><span>A0 size</span><span>Plans</span><span>Posters</span></div>
           </div>
         </article>
-
-        <article class="service-card reveal" data-category="large" data-title="flex & vinyl">
-          <div class="card-img-wrap"><img src="service-flex-vinyl.svg" alt="" loading="lazy"></div>
-          <div class="card-content">
-            <span class="category-tag tag-orange">Large Format</span>
+        <article class="service-card" data-category="large" data-title="flex & vinyl">
+          <img src="service-flex-vinyl.svg" alt="Flex & Vinyl illustration" loading="lazy">
+          <div class="service-body">
+            <span class="service-tag">Large</span>
             <h3>Flex & Vinyl</h3>
-            <p>Banners, vinyl, backlit eco, canvas, clear vinyl, and outdoor display materials.</p>
-            <div class="feature-pills"><span>Banners</span><span>Outdoor Durable</span></div>
+            <p>Banners, vinyl, backlit eco, canvas, satin, one-way vision, clear vinyl and outdoor display material.</p>
+            <div class="chips"><span>Banners</span><span>Vinyl</span><span>Canvas</span></div>
           </div>
         </article>
-
-        <article class="service-card reveal" data-category="finish" data-title="binding">
-          <div class="card-img-wrap"><img src="service-binding.svg" alt="" loading="lazy"></div>
-          <div class="card-content">
-            <span class="category-tag tag-green">Finishing</span>
+        <article class="service-card" data-category="finish" data-title="binding">
+          <img src="service-binding.svg" alt="Binding illustration" loading="lazy">
+          <div class="service-body">
+            <span class="service-tag">Finish</span>
             <h3>Binding</h3>
-            <p>Wiro, spiral, perfect, and hard binding for reports, books, submissions, and files.</p>
-            <div class="feature-pills"><span>Wiro</span><span>Spiral</span><span>Hard Bound</span></div>
+            <p>Wiro, spiral, perfect and hard binding for reports, books, submissions and official files.</p>
+            <div class="chips"><span>Wiro</span><span>Spiral</span><span>Hard binding</span></div>
           </div>
         </article>
-
-        <article class="service-card reveal" data-category="finish" data-title="lamination">
-          <div class="card-img-wrap"><img src="service-lamination.svg" alt="" loading="lazy"></div>
-          <div class="card-content">
-            <span class="category-tag tag-green">Finishing</span>
+        <article class="service-card" data-category="finish" data-title="lamination">
+          <img src="service-lamination.svg" alt="Lamination illustration" loading="lazy">
+          <div class="service-body">
+            <span class="service-tag">Finish</span>
             <h3>Lamination</h3>
-            <p>Protect certificates, cards, menus, posters, and documents with clean finishes.</p>
-            <div class="feature-pills"><span>Gloss/Matte</span><span>All Sizes</span></div>
+            <p>Protect certificates, cards, menus, posters and documents with clean lamination finishes.</p>
+            <div class="chips"><span>All sizes</span><span>Certificates</span><span>Menus</span></div>
           </div>
         </article>
-
-        <article class="service-card reveal" data-category="bulk" data-title="offset printing">
-          <div class="card-img-wrap"><img src="service-offset-printing.svg" alt="" loading="lazy"></div>
-          <div class="card-content">
-            <span class="category-tag tag-gray">Bulk</span>
+        <article class="service-card" data-category="bulk" data-title="offset printing">
+          <img src="service-offset-printing.svg" alt="Offset Printing illustration" loading="lazy">
+          <div class="service-body">
+            <span class="service-tag">Bulk</span>
             <h3>Offset Printing</h3>
-            <p>Bulk print production for bill books, brochures, pamphlets, coupons, and flyers.</p>
-            <div class="feature-pills"><span>Bill Books</span><span>Commercial Runs</span></div>
+            <p>Bulk print production for bill books, brochures, pamphlets, coupons, flyers and commercial print runs.</p>
+            <div class="chips"><span>Bill books</span><span>Pamphlets</span><span>Coupons</span></div>
           </div>
         </article>
-
-        <article class="service-card reveal" data-category="special" data-title="stickers & labels">
-          <div class="card-img-wrap"><img src="service-stickers-labels.svg" alt="" loading="lazy"></div>
-          <div class="card-content">
-            <span class="category-tag tag-yellow">Specialty</span>
+        <article class="service-card" data-category="special" data-title="stickers & labels">
+          <img src="service-stickers-labels.svg" alt="Stickers & Labels illustration" loading="lazy">
+          <div class="service-body">
+            <span class="service-tag">Special</span>
             <h3>Stickers & Labels</h3>
-            <p>Glossy, matte, transparent, gold, and non-tearable stickers for packaging and labels.</p>
-            <div class="feature-pills"><span>Die Cut</span><span>Transparent</span></div>
+            <p>Glossy, matte, transparent, gold and non-tearable stickers for packaging, labels and branding.</p>
+            <div class="chips"><span>Glossy</span><span>Transparent</span><span>Gold</span></div>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Pricing/Catalogue Section -->
-    <section class="section" id="catalogue">
-      <div class="container pricing-layout">
-        <div class="pricing-content reveal">
-          <h2 class="section-title">Transparent pricing for premium materials.</h2>
-          <p class="section-description">Clear rates for our most requested papers, card stocks, and large format media. Rates are shown for front-only and front & back printing where applicable.</p>
-          
-          <div class="info-box">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-            <div>
-              <strong>Business Card Recommendations</strong>
-              <p>For standard professional cards, we recommend <strong>Art Card 300-350 GSM</strong>. For a premium feel, try our <strong>Texture 601/602</strong> or metallic stocks.</p>
-            </div>
+    <!-- Material Recommendations & Brochure Guide -->
+    <section class="section catalogue" id="catalogue">
+      <div class="container catalogue-grid">
+        <div class="catalogue-copy reveal">
+          <span class="eyebrow">Material Guide & Brochure</span>
+          <h2>Explore paper stocks, textures and finishes available at CBC counters.</h2>
+          <p>We utilize high-grade digital press stocks optimized for single or double-sided printing. Front & back options utilize optimized paper run rates (not double cost). Connect with our counter via WhatsApp for exact sheet and bulk estimates.</p>
+          <div class="rate-note">
+            <strong>Pro Tip:</strong> For business cards and restaurant menus, Art Card 300–400 GSM or Texture 601/602 offer optimal rigidity and feel.
           </div>
         </div>
-
-        <div class="pricing-table-container reveal reveal-delay-1">
-          <div class="table-filters" role="tablist">
-            <button class="tab-btn active" role="tab" aria-selected="true" data-rate="all">All</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-rate="Premium Card Stock">Card Stock</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-rate="Textured & Metallic">Textures</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-rate="Stickers">Stickers</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-rate="Everyday Paper">Everyday</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-rate="Large Format">Large Format</button>
+        <div class="catalogue-panel reveal">
+          <div class="table-controls">
+            <button class="rate-filter active" data-rate="all">All Media</button>
+            <button class="rate-filter" data-rate="Card Stock">Card Stocks</button>
+            <button class="rate-filter" data-rate="Texture">Textures & Metallic</button>
+            <button class="rate-filter" data-rate="Stickers">Stickers & Labels</button>
+            <button class="rate-filter" data-rate="Large">Large Format</button>
           </div>
-          
-          <div class="table-scroll-wrapper">
-            <table class="data-table" id="rateTable">
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>Material</th>
-                  <th>Specs</th>
-                  <th>Size</th>
-                  <th class="text-right">Front Only</th>
-                  <th class="text-right">Front & Back</th>
-                </tr>
-              </thead>
+          <div class="table-wrap">
+            <table id="rateTable">
+              <thead><tr><th>Category</th><th>Material / Stock</th><th>GSM / Specs</th><th>Standard Size</th><th>Print Option</th></tr></thead>
               <tbody>
-                <tr data-group="Premium Card Stock"><td><span class="mobile-label">Category</span>Premium Card</td><td><strong>Colotech Hutter</strong></td><td>130 GSM</td><td>12 × 18 in</td><td class="text-right">₹30</td><td class="text-right">₹60</td></tr>
-                <tr data-group="Premium Card Stock"><td><span class="mobile-label">Category</span>Premium Card</td><td><strong>Color Spot</strong></td><td>130 GSM</td><td>12 × 18 in</td><td class="text-right">₹30</td><td class="text-right">₹60</td></tr>
-                <tr data-group="Premium Card Stock"><td><span class="mobile-label">Category</span>Premium Card</td><td><strong>Art Card</strong></td><td>170 GSM</td><td>12 × 18 in</td><td class="text-right">₹30</td><td class="text-right">₹60</td></tr>
-                <tr data-group="Premium Card Stock"><td><span class="mobile-label">Category</span>Premium Card</td><td><strong>Art Card</strong></td><td>250 GSM</td><td>12 × 18 in</td><td class="text-right">₹30</td><td class="text-right">₹60</td></tr>
-                <tr data-group="Premium Card Stock"><td><span class="mobile-label">Category</span>Premium Card</td><td><strong>Art Card</strong></td><td>300 GSM</td><td>12 × 18 in</td><td class="text-right">₹30</td><td class="text-right">₹60</td></tr>
-                <tr data-group="Premium Card Stock"><td><span class="mobile-label">Category</span>Premium Card</td><td><strong>Art Card</strong></td><td>350 GSM</td><td>12 × 18 in</td><td class="text-right font-bold">₹40</td><td class="text-right font-bold">₹80</td></tr>
-                <tr data-group="Premium Card Stock"><td><span class="mobile-label">Category</span>Premium Card</td><td><strong>Art Card</strong></td><td>400 GSM</td><td>12 × 18 in</td><td class="text-right font-bold">₹50</td><td class="text-right font-bold">₹100</td></tr>
-                
-                <tr data-group="Textured & Metallic"><td><span class="mobile-label">Category</span>Texture</td><td><strong>Texture 601</strong></td><td>280 GSM</td><td>12 × 18 in</td><td class="text-right">₹50</td><td class="text-right">₹100</td></tr>
-                <tr data-group="Textured & Metallic"><td><span class="mobile-label">Category</span>Texture</td><td><strong>Texture 602</strong></td><td>280 GSM</td><td>12 × 18 in</td><td class="text-right">₹50</td><td class="text-right">₹100</td></tr>
-                <tr data-group="Textured & Metallic"><td><span class="mobile-label">Category</span>Texture</td><td><strong>Texture Art UW</strong></td><td>300 GSM</td><td>12 × 18 in</td><td class="text-right">₹50</td><td class="text-right">₹100</td></tr>
-                <tr data-group="Textured & Metallic"><td><span class="mobile-label">Category</span>Metallic</td><td><strong>Silver Metallic 121</strong></td><td>280 GSM</td><td>12 × 18 in</td><td class="text-right">₹60</td><td class="text-right">₹120</td></tr>
-                <tr data-group="Textured & Metallic"><td><span class="mobile-label">Category</span>Metallic</td><td><strong>Scented Gold Met. 123</strong></td><td>280 GSM</td><td>12 × 18 in</td><td class="text-right">₹60</td><td class="text-right">₹120</td></tr>
-                <tr data-group="Textured & Metallic"><td><span class="mobile-label">Category</span>Metallic</td><td><strong>Gold Metallic 126</strong></td><td>280 GSM</td><td>12 × 18 in</td><td class="text-right">₹60</td><td class="text-right">₹120</td></tr>
-
-                <tr data-group="Stickers"><td><span class="mobile-label">Category</span>Stickers</td><td><strong>Glossy Sticker</strong></td><td>—</td><td>Sheet</td><td class="text-right">₹40</td><td class="text-right mute">—</td></tr>
-                <tr data-group="Stickers"><td><span class="mobile-label">Category</span>Stickers</td><td><strong>Matte Sticker</strong></td><td>—</td><td>Sheet</td><td class="text-right">₹40</td><td class="text-right mute">—</td></tr>
-                <tr data-group="Stickers"><td><span class="mobile-label">Category</span>Stickers</td><td><strong>Transparent Sticker</strong></td><td>—</td><td>Sheet</td><td class="text-right">₹60</td><td class="text-right mute">—</td></tr>
-                <tr data-group="Stickers"><td><span class="mobile-label">Category</span>Stickers</td><td><strong>Non-Tearable Sticker</strong></td><td>—</td><td>Sheet</td><td class="text-right">₹70</td><td class="text-right mute">—</td></tr>
-                <tr data-group="Stickers"><td><span class="mobile-label">Category</span>Stickers</td><td><strong>Gold Sticker</strong></td><td>200 Micron</td><td>Sheet</td><td class="text-right font-bold">₹100</td><td class="text-right mute">—</td></tr>
-
-                <tr data-group="Everyday Paper"><td><span class="mobile-label">Category</span>Everyday</td><td><strong>Plain Paper</strong></td><td>100 GSM</td><td>A4 / A3</td><td class="text-right mute">Ask at counter</td><td class="text-right mute">Ask at counter</td></tr>
-                <tr data-group="Everyday Paper"><td><span class="mobile-label">Category</span>Everyday</td><td><strong>Matte Paper</strong></td><td>170 GSM</td><td>A4 / A3</td><td class="text-right mute">Ask at counter</td><td class="text-right mute">Ask at counter</td></tr>
-                <tr data-group="Everyday Paper"><td><span class="mobile-label">Category</span>Everyday</td><td><strong>Glossy Paper</strong></td><td>170 GSM</td><td>A4 / A3</td><td class="text-right mute">Ask at counter</td><td class="text-right mute">Ask at counter</td></tr>
-
-                <tr data-group="Large Format"><td><span class="mobile-label">Category</span>Large Format</td><td><strong>Canvas</strong></td><td>Premium</td><td>By size</td><td class="text-right mute">Quoted by size</td><td class="text-right mute">-</td></tr>
-                <tr data-group="Large Format"><td><span class="mobile-label">Category</span>Large Format</td><td><strong>Solvent Vinyl</strong></td><td>Standard</td><td>By size</td><td class="text-right mute">Quoted by size</td><td class="text-right mute">-</td></tr>
-                <tr data-group="Large Format"><td><span class="mobile-label">Category</span>Large Format</td><td><strong>Solvent Clear Vinyl</strong></td><td>Transparent</td><td>By size</td><td class="text-right mute">Quoted by size</td><td class="text-right mute">-</td></tr>
-                <tr data-group="Large Format"><td><span class="mobile-label">Category</span>Large Format</td><td><strong>Starflex</strong></td><td>Heavy duty</td><td>By size</td><td class="text-right mute">Quoted by size</td><td class="text-right mute">-</td></tr>
-                <tr data-group="Large Format"><td><span class="mobile-label">Category</span>Large Format</td><td><strong>Normal Flex</strong></td><td>Standard</td><td>By size</td><td class="text-right mute">Quoted by size</td><td class="text-right mute">-</td></tr>
-                <tr data-group="Large Format"><td><span class="mobile-label">Category</span>Large Format</td><td><strong>Eco Vinyl</strong></td><td>Eco-friendly</td><td>By size</td><td class="text-right mute">Quoted by size</td><td class="text-right mute">-</td></tr>
+                <tr data-group="Card Stock" data-material="colotech hutter"><td><span>Card Stock</span></td><td><strong>Colotech Hutter</strong></td><td>130 GSM</td><td>12 × 18 in</td><td>Front / Front & Back</td></tr>
+                <tr data-group="Card Stock" data-material="color spot"><td><span>Card Stock</span></td><td><strong>Color Spot</strong></td><td>130 GSM</td><td>12 × 18 in</td><td>Front / Front & Back</td></tr>
+                <tr data-group="Card Stock" data-material="art card"><td><span>Card Stock</span></td><td><strong>Art Card</strong></td><td>170 - 250 GSM</td><td>12 × 18 in</td><td>Front / Front & Back</td></tr>
+                <tr data-group="Card Stock" data-material="art card"><td><span>Card Stock</span></td><td><strong>Art Card</strong></td><td>300 - 350 GSM</td><td>12 × 18 in</td><td>Front / Front & Back</td></tr>
+                <tr data-group="Card Stock" data-material="art card"><td><span>Card Stock</span></td><td><strong>Art Card</strong></td><td>400 GSM</td><td>12 × 18 in</td><td>Front / Front & Back</td></tr>
+                <tr data-group="Texture" data-material="texture 601"><td><span>Texture & Metallic</span></td><td><strong>Texture 601</strong></td><td>280 GSM</td><td>12 × 18 in</td><td>Front / Front & Back</td></tr>
+                <tr data-group="Texture" data-material="texture 602"><td><span>Texture & Metallic</span></td><td><strong>Texture 602</strong></td><td>280 GSM</td><td>12 × 18 in</td><td>Front / Front & Back</td></tr>
+                <tr data-group="Texture" data-material="texture art uw"><td><span>Texture & Metallic</span></td><td><strong>Texture Art UW</strong></td><td>300 GSM</td><td>12 × 18 in</td><td>Front / Front & Back</td></tr>
+                <tr data-group="Texture" data-material="silver metallic 121"><td><span>Texture & Metallic</span></td><td><strong>Silver Metallic 121</strong></td><td>280 GSM</td><td>12 × 18 in</td><td>Front / Front & Back</td></tr>
+                <tr data-group="Texture" data-material="scented gold metallic 123"><td><span>Texture & Metallic</span></td><td><strong>Scented Gold Metallic 123</strong></td><td>280 GSM</td><td>12 × 18 in</td><td>Front / Front & Back</td></tr>
+                <tr data-group="Texture" data-material="gold metallic 126"><td><span>Texture & Metallic</span></td><td><strong>Gold Metallic 126</strong></td><td>280 GSM</td><td>12 × 18 in</td><td>Front / Front & Back</td></tr>
+                <tr data-group="Stickers" data-material="glossy sticker"><td><span>Stickers</span></td><td><strong>Glossy Sticker</strong></td><td>Standard</td><td>Sheet</td><td>Single Side</td></tr>
+                <tr data-group="Stickers" data-material="matte sticker"><td><span>Stickers</span></td><td><strong>Matte Sticker</strong></td><td>Standard</td><td>Sheet</td><td>Single Side</td></tr>
+                <tr data-group="Stickers" data-material="transparent sticker"><td><span>Stickers</span></td><td><strong>Transparent Sticker</strong></td><td>Standard</td><td>Sheet</td><td>Single Side</td></tr>
+                <tr data-group="Stickers" data-material="gold sticker"><td><span>Stickers</span></td><td><strong>Gold Sticker</strong></td><td>200 Micron</td><td>Sheet</td><td>Single Side</td></tr>
+                <tr data-group="Stickers" data-material="non-tearable sticker"><td><span>Stickers</span></td><td><strong>Non-Tearable Sticker</strong></td><td>Synthetic</td><td>Sheet</td><td>Single Side</td></tr>
+                <tr data-group="Large" data-material="canvas"><td><span>Large Format</span></td><td><strong>Canvas</strong></td><td>Heavyweight</td><td>By Custom Size</td><td>Outdoor / Indoor</td></tr>
+                <tr data-group="Large" data-material="solvent vinyl"><td><span>Large Format</span></td><td><strong>Solvent Vinyl</strong></td><td>Durable</td><td>By Custom Size</td><td>Weatherproof</td></tr>
+                <tr data-group="Large" data-material="starflex"><td><span>Large Format</span></td><td><strong>Starflex</strong></td><td>Banner Grade</td><td>By Custom Size</td><td>Outdoor Display</td></tr>
               </tbody>
             </table>
           </div>
@@ -336,300 +288,165 @@
       </div>
     </section>
 
-    <!-- Inside CBC (Shop/Gallery) -->
-    <section class="section bg-light" id="workshop">
-      <div class="container section-header text-center reveal">
-        <h2 class="section-title">Inside the workshop.</h2>
-        <p class="section-description">Take a look at the commercial machines, design desks, and finishing stations behind every order at CBC.</p>
+    <section class="section workshop" id="workshop">
+      <div class="container section-head reveal">
+        <span class="eyebrow">Inside CBC</span>
+        <h2>Real machines, real counters, real print work.</h2>
+        <p>A closer look at the machines, design desks, media rolls, finishing work and ready print stacks behind every order.</p>
       </div>
-
-      <div class="container bento-grid">
-        <figure class="bento-item item-large reveal">
-          <img src="shop-print-floor.webp" alt="High-volume digital production machines" loading="lazy">
-          <figcaption>
-            <span class="caption-tag">Production</span>
-            <strong>High-volume digital presses.</strong>
-          </figcaption>
-        </figure>
-        <figure class="bento-item reveal reveal-delay-1">
-          <img src="shop-design-desk.webp" alt="Design desk and prepress workstations" loading="lazy">
-          <figcaption>
-            <span class="caption-tag">Design Studio</span>
-            <strong>Prepress & artwork prep.</strong>
-          </figcaption>
-        </figure>
-        <figure class="bento-item reveal reveal-delay-2">
-          <img src="shop-media-rolls.webp" alt="Flex and vinyl media rolls" loading="lazy">
-          <figcaption>
-            <span class="caption-tag">Media Range</span>
-            <strong>Flex & vinyl inventory.</strong>
-          </figcaption>
-        </figure>
-        <figure class="bento-item reveal reveal-delay-1">
-          <img src="shop-finishing.webp" alt="Print finishing and cutting machines" loading="lazy">
-          <figcaption>
-            <span class="caption-tag">Finishing</span>
-            <strong>Precision cutting & binding.</strong>
-          </figcaption>
-        </figure>
-        <figure class="bento-item reveal reveal-delay-2">
-          <img src="shop-paper-stack.webp" alt="Cleanly stacked completed print jobs" loading="lazy">
-          <figcaption>
-            <span class="caption-tag">Quality Check</span>
-            <strong>Ready for pickup.</strong>
-          </figcaption>
-        </figure>
+      <div class="container gallery-grid">
+        <article class="gallery-large reveal"><img src="shop-print-floor.webp" alt="Digital print production machine at Classic Business Centre"><div><span>Digital production</span><strong>High-volume machines for colour and office jobs.</strong></div></article>
+        <article class="reveal"><img src="shop-design-desk.webp" alt="Design desk and computer workstations"><div><span>Design desk</span><strong>Artwork checking and prepress before printing.</strong></div></article>
+        <article class="reveal"><img src="shop-media-rolls.webp" alt="Colourful rolls and print media"><div><span>Media range</span><strong>Flex, vinyl and large-format material options.</strong></div></article>
+        <article class="reveal"><img src="shop-finishing.webp" alt="Finishing and cutting machine"><div><span>Finishing</span><strong>Cutting, binding and final print handling.</strong></div></article>
+        <article class="reveal"><img src="shop-paper-stack.webp" alt="Finished paper stack and certificates"><div><span>Ready jobs</span><strong>Cleanly prepared output for pickup.</strong></div></article>
       </div>
     </section>
 
-    <!-- WhatsApp Request Form -->
-    <section class="section request-section" id="request">
-      <div class="container request-layout">
-        <div class="request-content reveal">
-          <div class="icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-          </div>
-          <h2 class="section-title">Start your job on WhatsApp.</h2>
-          <p class="section-description">Skip the wait. Fill in your requirements, and the details will open directly in WhatsApp where you can securely attach your files.</p>
-          <div class="contact-card">
-            <strong>Or chat directly:</strong>
-            <a href="https://wa.me/919422062887" target="_blank" rel="noreferrer" class="wa-direct-link">+91 94220 62887</a>
-          </div>
-        </div>
-
-        <div class="form-card reveal reveal-delay-1">
-          <form id="printForm" class="whatsapp-form">
-            <div class="form-header">
-              <h3>Job Requirements</h3>
-              <div class="progress-bar"><div class="progress-fill" id="formProgress"></div></div>
-            </div>
-            
-            <div class="form-group full-width">
-              <label for="f_service">Service Type</label>
-              <div class="select-wrapper">
-                <select id="f_service" name="service" required>
-                  <option value="" disabled selected>Select a service...</option>
-                  <option value="Business Cards">Business Cards</option>
-                  <option value="Digital Printing">Digital Printing</option>
-                  <option value="Xerox / Copying">Xerox / Copying</option>
-                  <option value="Graphic Designing">Graphic Designing</option>
-                  <option value="Flex & Vinyl">Flex & Vinyl</option>
-                  <option value="Binding">Binding</option>
-                  <option value="Lamination">Lamination</option>
-                  <option value="Scanning">Scanning</option>
-                  <option value="Offset Printing">Offset Printing</option>
-                  <option value="Stickers & Labels">Stickers & Labels</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="f_material">Material / Paper</label>
-                <div class="select-wrapper">
-                  <select id="f_material" name="material">
-                    <option value="Standard / Not Sure">Standard / Let CBC Recommend</option>
-                    <optgroup label="Premium Card">
-                      <option value="Art Card 300 GSM">Art Card 300 GSM</option>
-                      <option value="Art Card 350 GSM">Art Card 350 GSM</option>
-                      <option value="Art Card 400 GSM">Art Card 400 GSM</option>
-                    </optgroup>
-                    <optgroup label="Textures & Metallic">
-                      <option value="Texture 601">Texture 601</option>
-                      <option value="Texture 602">Texture 602</option>
-                      <option value="Silver Metallic 121">Silver Metallic 121</option>
-                    </optgroup>
-                    <optgroup label="Stickers & Flex">
-                      <option value="Glossy Sticker">Glossy Sticker</option>
-                      <option value="Matte Sticker">Matte Sticker</option>
-                      <option value="Transparent Sticker">Transparent Sticker</option>
-                      <option value="Normal Flex">Normal Flex</option>
-                      <option value="Eco Vinyl">Eco Vinyl</option>
-                    </optgroup>
-                  </select>
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <label for="f_side">Print Side</label>
-                <div class="select-wrapper">
-                  <select id="f_side" name="side">
-                    <option value="Front only">Front only</option>
-                    <option value="Front & Back">Front & Back</option>
-                    <option value="Not sure">Not sure / Depends</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="f_size">Size</label>
-                <input type="text" id="f_size" name="size" placeholder="e.g. A4, 12×18, 3x2 ft...">
-              </div>
-              <div class="form-group">
-                <label for="f_quantity">Quantity</label>
-                <input type="number" id="f_quantity" name="quantity" min="1" value="100">
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="f_branch">Pickup Branch</label>
-                <div class="select-wrapper">
-                  <select id="f_branch" name="branch" required>
-                    <option value="" disabled selected>Select branch...</option>
-                    <option value="Panaji · Patto Plaza">Panaji · Patto Plaza</option>
-                    <option value="Panaji · M.G. Road">Panaji · M.G. Road</option>
-                    <option value="Porvorim">Porvorim</option>
-                    <option value="Mapusa">Mapusa</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="f_deadline">Needed By</label>
-                <input type="text" id="f_deadline" name="deadline" placeholder="Today, Tomorrow evening...">
-              </div>
-            </div>
-
-            <div class="form-group full-width">
-              <label for="f_notes">Special Instructions</label>
-              <textarea id="f_notes" name="notes" rows="3" placeholder="Mention specific finishing, binding preferences, color requirements, or delivery notes..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-whatsapp full-width">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-              Send Details to WhatsApp
-            </button>
-          </form>
-        </div>
+    <!-- Frequently Asked Questions (FAQ) Section -->
+    <section class="section faq" id="faq">
+      <div class="container section-head reveal">
+        <span class="eyebrow">Help & Support</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about placing print jobs, file preparation, and branch collections.</p>
+      </div>
+      <div class="container faq-grid reveal">
+        <details class="faq-item">
+          <summary>How do I send my files for printing?</summary>
+          <p>You can use our interactive WhatsApp print request form on this website. Once submitted, it opens a direct chat with your selected CBC branch where you can securely attach your PDF, CorelDraw, Illustrator, or image files.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What file formats do you accept?</summary>
+          <p>We prefer high-resolution PDF files with fonts outlined or embedded. We also accept CDR, AI, PSD, JPEG, and PNG files for direct printing or prepress review.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I pick up my order from any branch?</summary>
+          <p>Yes! We have 4 convenient branches across Goa (two in Panaji, one in Porvorim, and one in Mapusa). You can choose your preferred pickup branch directly in the print request form.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How long do standard print jobs take?</summary>
+          <p>Most everyday digital prints, xerox sets, and spiral binding jobs are completed same-day. Large format flex, bulk offset orders, or specialized textured business cards may require confirmation on timeline from the branch counter.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you offer graphic design services?</summary>
+          <p>Yes, our professional design desk assists with layout creation, visiting cards, restaurant menus, brochures, and wedding invitation prepress formatting.</p>
+        </details>
       </div>
     </section>
 
-    <!-- Branches Section -->
-    <section class="section bg-light" id="branches">
-      <div class="container section-header text-center reveal">
-        <h2 class="section-title">4 Locations across Goa.</h2>
-        <p class="section-description">Choose the branch closest to you for fast pickup or counter consultation. With two branches in Panaji and coverage across North Goa.</p>
+    <section class="section request" id="request">
+      <div class="container request-grid">
+        <div class="request-copy reveal">
+          <span class="eyebrow">Print request</span>
+          <h2>Start your print job on WhatsApp.</h2>
+          <p>Select the job type, paper, side option and branch. The details route directly to the respective branch WhatsApp number, where files can be attached safely.</p>
+          <a class="cta cta-main" href="https://wa.me/919422062887" target="_blank" rel="noreferrer">WhatsApp CBC Central</a>
+        </div>
+        <form class="print-form reveal" id="printForm">
+          <div class="form-progress"><span style="width:25%"></span></div>
+          <label>Service
+            <select name="service" required>
+              <option value="">Select Service...</option>
+              <option>Business Cards</option><option>Digital Printing</option><option>Xerox / Copying</option><option>Graphic Designing</option><option>Flex & Vinyl</option><option>Binding</option><option>Lamination</option><option>Scanning</option><option>Offset Printing</option><option>Stickers & Labels</option>
+            </select>
+          </label>
+          <div class="two-col">
+            <label>Material / Stock
+              <select name="material">
+                <option value="">Select Material...</option>
+                <option>Art Card 300 GSM</option><option>Art Card 350 GSM</option><option>Art Card 400 GSM</option><option>Texture 601</option><option>Texture 602</option><option>Silver Metallic 121</option><option>Glossy Sticker</option><option>Matte Sticker</option><option>Transparent Sticker</option><option>Normal Flex</option><option>Eco Vinyl</option>
+              </select>
+            </label>
+            <label>Print Side
+              <select name="side"><option>Front only</option><option>Front & Back</option><option>Not sure</option></select>
+            </label>
+          </div>
+          <div class="two-col">
+            <label>Size
+              <input name="size" placeholder="A4, A3, 12 × 18, A0, custom">
+            </label>
+            <label>Quantity
+              <input name="quantity" type="number" min="1" value="100">
+            </label>
+          </div>
+          <div class="two-col">
+            <label>Branch for Pickup
+              <select name="branch" id="branchSelect" required>
+                <option value="">Select Branch...</option>
+                <option value="patto">Panaji · Patto Plaza</option>
+                <option value="mgroad">Panaji · M.G. Road</option>
+                <option value="porvorim">Porvorim</option>
+                <option value="mapusa">Mapusa</option>
+              </select>
+            </label>
+            <label>Needed by
+              <input name="deadline" placeholder="Today, tomorrow, date/time">
+            </label>
+          </div>
+          <label>Notes
+            <textarea name="notes" rows="4" placeholder="Mention finish, colour, paper choice, cutting, binding, lamination or delivery details."></textarea>
+          </label>
+          <button class="cta cta-main form-submit" type="submit">PRINT NOW ON WHATSAPP</button>
+        </form>
       </div>
-      
-      <div class="container branches-grid">
-        <!-- Branch: Patto -->
-        <article class="branch-card reveal">
-          <div class="branch-info">
-            <span class="city-tag">Panaji</span>
-            <h3>Patto Plaza</h3>
-            <p class="address">Shop No. S-101, 1st Floor, EDC Patto Plaza, Panaji, Goa</p>
-            <div class="branch-links">
-              <a href="https://www.google.com/maps/search/Classic+Business+Centre+EDC+Patto+Panaji" target="_blank" rel="noreferrer" class="link-with-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                Get Directions
-              </a>
-            </div>
-          </div>
-          <div class="map-wrapper">
-            <iframe title="Map of Panaji Patto Plaza branch" loading="lazy" src="https://www.google.com/maps?q=Classic%20Business%20Centre%20EDC%20Patto%20Panaji&output=embed"></iframe>
-          </div>
-        </article>
+    </section>
 
-        <!-- Branch: MG Road -->
-        <article class="branch-card reveal">
-          <div class="branch-info">
-            <span class="city-tag">Panaji</span>
-            <h3>M.G. Road</h3>
-            <p class="address">Shop No. 1, 5/6, Excelsior Chambers, M.G. Road, Panaji, Goa</p>
-            <div class="branch-links">
-              <a href="https://www.google.com/maps/search/Classic+Business+Centre+M+G+Road+Panaji+Goa" target="_blank" rel="noreferrer" class="link-with-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                Get Directions
-              </a>
-            </div>
+    <section class="section branches" id="branches">
+      <div class="container section-head reveal">
+        <span class="eyebrow">Branches</span>
+        <h2>Four CBC locations across Goa, including two in Panaji.</h2>
+        <p>Choose the branch that is closest for print collection or counter support.</p>
+      </div>
+      <div class="container branch-grid">
+        <article class="branch-card">
+          <div>
+            <span class="eyebrow">Branch</span>
+            <h3>Panaji · Patto Plaza</h3>
+            <p>Shop No. S-101, 1st Floor, EDC Patto Plaza, Panaji, Goa</p>
+            <p><b>Phone:</b> +91 94220 62887</p>
+            <a class="map-link" href="https://www.google.com/maps/search/Classic+Business+Centre+EDC+Patto+Panaji" target="_blank" rel="noreferrer">Open in Google Maps</a>
           </div>
-          <div class="map-wrapper">
-            <iframe title="Map of Panaji M.G. Road branch" loading="lazy" src="https://www.google.com/maps?q=Classic%20Business%20Centre%20M%20G%20Road%20Panaji%20Goa&output=embed"></iframe>
-          </div>
+          <iframe title="Panaji · Patto Plaza map" loading="lazy" src="https://www.google.com/maps?q=Classic%20Business%20Centre%20EDC%20Patto%20Panaji&output=embed"></iframe>
         </article>
-
-        <!-- Branch: Porvorim -->
-        <article class="branch-card reveal">
-          <div class="branch-info">
-            <span class="city-tag">North Goa</span>
+        <article class="branch-card">
+          <div>
+            <span class="eyebrow">Branch</span>
+            <h3>Panaji · M.G. Road</h3>
+            <p>Shop No. 1, 5/6, Excelsior Chambers, M.G. Road, Panaji, Goa</p>
+            <p><b>Phone:</b> +91 94220 62887</p>
+            <a class="map-link" href="https://www.google.com/maps/search/Classic+Business+Centre+M+G+Road+Panaji+Goa" target="_blank" rel="noreferrer">Open in Google Maps</a>
+          </div>
+          <iframe title="Panaji · M.G. Road map" loading="lazy" src="https://www.google.com/maps?q=Classic%20Business%20Centre%20M%20G%20Road%20Panaji%20Goa&output=embed"></iframe>
+        </article>
+        <article class="branch-card">
+          <div>
+            <span class="eyebrow">Branch</span>
             <h3>Porvorim</h3>
-            <p class="address">Shop No. D-20, Housing Board Colony, behind Pundalik Temple, Alto Porvorim, Goa</p>
-            <div class="branch-links">
-              <a href="https://www.google.com/maps/search/Classic+Offset+Printers+Housing+Board+Colony+Alto+Porvorim+Goa" target="_blank" rel="noreferrer" class="link-with-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                Get Directions
-              </a>
-            </div>
+            <p>Shop No. D-20, Housing Board Colony, behind Pundalik Temple, Alto Porvorim, Goa</p>
+            <p><b>Phone:</b> +91 94220 62887</p>
+            <a class="map-link" href="https://www.google.com/maps/search/Classic+Offset+Printers+Housing+Board+Colony+Alto+Porvorim+Goa" target="_blank" rel="noreferrer">Open in Google Maps</a>
           </div>
-          <div class="map-wrapper">
-            <iframe title="Map of Porvorim branch" loading="lazy" src="https://www.google.com/maps?q=Classic%20Offset%20Printers%20Housing%20Board%20Colony%20Alto%20Porvorim%20Goa&output=embed"></iframe>
-          </div>
+          <iframe title="Porvorim map" loading="lazy" src="https://www.google.com/maps?q=Classic%20Offset%20Printers%20Housing%20Board%20Colony%20Alto%20Porvorim%20Goa&output=embed"></iframe>
         </article>
-
-        <!-- Branch: Mapusa -->
-        <article class="branch-card reveal">
-          <div class="branch-info">
-            <span class="city-tag">North Goa</span>
+        <article class="branch-card">
+          <div>
+            <span class="eyebrow">Branch</span>
             <h3>Mapusa</h3>
-            <p class="address">Shop No. 15–18, El-Capitan Centre, next to Sony Showroom, Alto Mapusa, Goa</p>
-            <div class="branch-links">
-              <a href="https://www.google.com/maps/search/Classic+Business+Centre+El+Capitan+Centre+Mapusa+Goa" target="_blank" rel="noreferrer" class="link-with-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                Get Directions
-              </a>
-            </div>
+            <p>Shop No. 15–18, El-Capitan Centre, next to Sony Showroom, Alto Mapusa, Goa</p>
+            <p><b>Phone:</b> +91 94220 62887</p>
+            <a class="map-link" href="https://www.google.com/maps/search/Classic+Business+Centre+El+Capitan+Centre+Mapusa+Goa" target="_blank" rel="noreferrer">Open in Google Maps</a>
           </div>
-          <div class="map-wrapper">
-            <iframe title="Map of Mapusa branch" loading="lazy" src="https://www.google.com/maps?q=Classic%20Business%20Centre%20El%20Capitan%20Centre%20Mapusa%20Goa&output=embed"></iframe>
-          </div>
+          <iframe title="Mapusa map" loading="lazy" src="https://www.google.com/maps?q=Classic%20Business%20Centre%20El%20Capitan%20Centre%20Mapusa%20Goa&output=embed"></iframe>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="#top" aria-label="Classic Business Centre home"><img src="logo.png" alt="CBC Logo" width="60" height="60"></a>
-        <p>Premium digital printing, Xerox, graphic design, jumbo printing, flex & vinyl, offset printing, and finishing services across Goa.</p>
-        <div class="footer-socials"></div>
-      </div>
-      
-      <div class="footer-links">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Digital Printing</a></li>
-          <li><a href="#services">Business Cards</a></li>
-          <li><a href="#services">Flex & Vinyl</a></li>
-          <li><a href="#services">Offset Printing</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-links">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#catalogue">Rates & Materials</a></li>
-          <li><a href="#workshop">Our Shop</a></li>
-          <li><a href="#branches">Find a Branch</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-contact">
-        <h4>Contact Us</h4>
-        <a href="tel:+919422062887" class="contact-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          +91 94220 62887
-        </a>
-        <a href="https://wa.me/919422062887" target="_blank" rel="noreferrer" class="contact-item highlight">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-          WhatsApp Print Order
-        </a>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>&copy; 2024 Classic Business Centre. All rights reserved.</p>
+      <div><img src="logo.png" alt="Classic Business Centre logo"><p>Digital printing, xerox, graphic designing, jumbo printing, flex & vinyl, binding, offset printing, scanning and lamination across Goa.</p></div>
+      <div><h3>Contact</h3><a href="tel:+919422062887">+91 94220 62887</a><a href="https://wa.me/919422062887" target="_blank" rel="noreferrer">WhatsApp Print Request</a></div>
+      <div><h3>Fast Links</h3><a href="#services">Services</a><a href="#catalogue">Guide</a><a href="#branches">Branches</a><a href="#faq">FAQ</a><a href="#request">Print Now</a></div>
     </div>
   </footer>
 
