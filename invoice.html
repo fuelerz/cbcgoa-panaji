@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Official Invoice - Fuelerz Studio</title>
+  <style>
+    :root {
+      --primary: #7c3aed; /* Rich Purple */
+      --primary-dark: #581c87;
+      --black: #0f172a;
+      --gray: #64748b;
+      --light: #f8fafc;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: var(--black);
+      background: #fff;
+      padding: 40px;
+      -webkit-print-color-adjust: exact;
+    }
+    .invoice-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 50px;
+      box-shadow: 0 10px 30px rgba(124, 58, 237, 0.05);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .brand-logo {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+    }
+    .brand-info h1 {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--black);
+      letter-spacing: -0.03em;
+    }
+    .brand-info p {
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.5;
+    }
+    .invoice-meta {
+      text-align: right;
+    }
+    .invoice-meta h2 {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+    }
+    .invoice-meta p {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 4px;
+    }
+    .parties-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .party-card {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .party-card h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+    .party-card h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 6px;
+    }
+    .party-card p {
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.5;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th {
+      background: var(--black);
+      color: white;
+      text-align: left;
+      padding: 12px 16px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    th:first-child { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+    th:last-child { border-top-right-radius: 8px; border-bottom-right-radius: 8px; text-align: right; }
+    td {
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--black);
+    }
+    td:last-child { text-align: right; font-weight: 700; }
+    .totals-section {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 40px;
+    }
+    .totals-box {
+      width: 320px;
+    }
+    .totals-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      font-size: 14px;
+      color: var(--gray);
+      border-bottom: 1px solid var(--border);
+    }
+    .totals-row.final {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--black);
+      border-bottom: 2px solid var(--black);
+      padding: 14px 0;
+    }
+    .installments-box {
+      background: rgba(124, 58, 237, 0.04);
+      border: 1px dashed var(--primary);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+    .installments-box h4 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+    .installment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+    .installment-item {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      border-radius: 8px;
+    }
+    .installment-item span {
+      display: block;
+      font-size: 11px;
+      color: var(--gray);
+      text-transform: uppercase;
+    }
+    .installment-item strong {
+      font-size: 14px;
+      color: var(--black);
+    }
+    .footer-note {
+      text-align: center;
+      border-top: 1px solid var(--border);
+      padding-top: 25px;
+      color: var(--gray);
+      font-size: 12px;
+    }
+    .signature-area {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 30px;
+    }
+    .sig-line {
+      width: 200px;
+      border-top: 1px solid var(--black);
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      padding-top: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="invoice-container">
+    <!-- Header -->
+    <div class="header">
+      <div class="brand-section">
+        <!-- Logo reference pointing to provided logo -->
+        <img src="logo.png" alt="Fuelerz Logo" class="brand-logo">
+        <div class="brand-info">
+          <h1>Fuelerz Studio</h1>
+          <p>H. № 82, Ground Floor, Bandh<br>Santa Cruz, North-Goa, 403005</p>
+          <p><b>Phone:</b> 7722011476 | <b>Email:</b> studio@fuelerz.com</p>
+        </div>
+      </div>
+      <div class="invoice-meta">
+        <h2>Invoice</h2>
+        <p><b>Invoice No:</b> INV-2026-001</p>
+        <p><b>Date:</b> August 24, 2026</p>
+      </div>
+    </div>
+
+    <!-- Bill To / From -->
+    <div class="parties-section">
+      <div class="party-card">
+        <h3>Billed From</h3>
+        <h4>Fuelerz Studio</h4>
+        <p>Founder: Sergio Caetano Fernandes</p>
+        <p>Santa Cruz, North-Goa, India</p>
+        <p>GSTIN: Registered Provider</p>
+      </div>
+      <div class="party-card">
+        <h3>Billed To</h3>
+        <h4>Classic Business Centre</h4>
+        <p>Panjim Branch (M.G. Road / Patto Plaza)</p>
+        <p>Panaji, Goa, India</p>
+        <p><b>Attn:</b> Management & Accounts</p>
+      </div>
+    </div>
+
+    <!-- Line Items -->
+    <table>
+      <thead>
+        <tr>
+          <th>Description of Services</th>
+          <th>Rate / Terms</th>
+          <th>Amount (INR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong>Digital Presence Architecture & V2 Platform Development</strong><br>
+            <small style="color: var(--gray);">Full website modernization, architecture audit, responsive frontend design, and automated WhatsApp branch routing configuration.</small>
+          </td>
+          <td>Inclusive of GST</td>
+          <td>₹15,000.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Installment Record Box -->
+    <div class="installments-box">
+      <h4>Payment Breakdown (Paid via Cheques)</h4>
+      <div class="installment-grid">
+        <div class="installment-item">
+          <span>Installment 01</span>
+          <strong>₹5,000.00 (Cleared)</strong>
+        </div>
+        <div class="installment-item">
+          <span>Installment 02</span>
+          <strong>₹5,000.00 (Cleared)</strong>
+        </div>
+        <div class="installment-item">
+          <span>Installment 03</span>
+          <strong>₹5,000.00 (Cleared)</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Totals -->
+    <div class="totals-section">
+      <div class="totals-box">
+        <div class="totals-row">
+          <span>Subtotal</span>
+          <span>₹15,000.00</span>
+        </div>
+        <div class="totals-row">
+          <span>GST (Inclusive)</span>
+          <span>₹0.00 (Included)</span>
+        </div>
+        <div class="totals-row final">
+          <span>Total Paid</span>
+          <span style="color: var(--primary);">₹15,000.00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signature & Footer -->
+    <div class="signature-area">
+      <div>
+        <p style="font-size: 12px; color: var(--gray);">Status: <b style="color: #10b981;">PAID IN FULL</b> via 3 Cheque Installments.</p>
+        <p style="font-size: 12px; color: var(--gray); margin-top: 4px;">Thank you for your business partnership.</p>
+      </div>
+      <div class="sig-line">
+        Sergio Caetano Fernandes<br>
+        <span style="font-weight: normal; font-size: 11px; color: var(--gray);">Founder, Fuelerz</span>
+      </div>
+    </div>
+
+    <div class="footer-note" style="margin-top: 40px;">
+      Fuelerz Studio • Santa Cruz, Goa • studio@fuelerz.com • 7722011476
+    </div>
+  </div>
+
+</body>
+</html>
